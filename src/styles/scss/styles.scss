@@ -1,6 +1,13 @@
-@import "variables", "layout", "components", "animations", "media-queries";
+@import "variables", "mixins", "layout", "components", "animations", "media-queries";
 
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
 ------------------------------------------------------
+
+
 */
+
+/*---------------------------------------1. Text----*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

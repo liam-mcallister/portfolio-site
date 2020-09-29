@@ -1,0 +1,57 @@
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+
+*/
+
+/*----------------------------------1. Universal----*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*---------------------------------------2. Body----*/
+body {
+}
+
+/*----------------------------------------3. Nav----*/
+nav {
+  background: coral;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  padding: 0 2rem;
+}
+
+.navbar__nav {
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+/*-----------------------------------4. Masthead----*/
+.masthead {
+  background: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+
+/*----------------------------------5. Portfolio----*/
+.portfolio {
+  background: firebrick;
+  width: 100%;
+  height: 1000px;
+}

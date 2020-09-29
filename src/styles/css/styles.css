@@ -1,5 +1,103 @@
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
 ------------------------------------------------------
+
+
 */
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+
+*/
+/*----------------------------------1. Universal----*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*---------------------------------------2. Body----*/
+/*----------------------------------------3. Nav----*/
+nav {
+  background: coral;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 56px;
+  padding: 0 2rem;
+}
+
+.navbar__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+/*-----------------------------------4. Masthead----*/
+.masthead {
+  background: teal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+}
+
+/*----------------------------------5. Portfolio----*/
+.portfolio {
+  background: firebrick;
+  width: 100%;
+  height: 1000px;
+}
+
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+
+*/
+/*-----------------------------------------Links----*/
+a {
+  text-decoration: none;
+}
+
+/*-----------------------------------------Inner----*/
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+
+*/
+/*---------------------------------------1. Text----*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 /*# sourceMappingURL=styles.css.map */
