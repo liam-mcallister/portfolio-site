@@ -36,41 +36,64 @@
 
 <body>
 
-    <nav>
-        <div class="inner">
-            <div class="navbar">
-                <p>Liam McAllister</p>
-                <ul class="navbar__nav">
-                    <li class="nav-item"><a href="#">Portfolio</a></li>
-                    <li class="nav-item"><a href="#">Skills</a></li>
-                    <li class="nav-item"><a href="#">About</a></li>
-                    <li class="nav-item"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+    <nav role="navigation" class="navbar">
+        <ul class="navbar__nav">
+            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
     </nav>
 
     <div class="masthead">
-        <div class="inner">
-            <div class="masthead__content">
+        <div class="masthead__content">
+            <div class="masthead__content__text">
                 <h1>Liam McAllister</h1>
                 <h3>Front-end Web Developer</h3>
-                <div class="masthead__content__links">
-                    <a class="btn" href="#">
-                        <img class="icon" src="images/linkedin.svg" alt="">
-                    </a>
-                    <a class="btn" href="#">
-                        <img class="icon" src="images/github.svg" alt="">
-                    </a>
-                    <a class="btn" href="#">
-                        <img class="icon" src="images/codepen.svg" alt="">
-                    </a>
-                    <a class="btn" href="#">
-                        <img class="icon" src="images/linkedin.svg" alt="">
-                    </a>
-                </div>
+            </div>
+            <div class="masthead__content__links">
+                <a class="btn" href="#">
+                    <img class="icon" src="images/linkedin.svg" alt="">
+                </a>
+                <a class="btn" href="#">
+                    <img class="icon" src="images/github.svg" alt="">
+                </a>
+                <a class="btn" href="#">
+                    <img class="icon" src="images/codepen.svg" alt="">
+                </a>
+                <a class="btn" href="#">
+                    <img class="icon" src="images/linkedin.svg" alt="">
+                </a>
             </div>
         </div>
+
+        <div class="masthead__blob">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="100%" id="blobSvg">
+                <defs>
+                    <linearGradient id="gradient" x1="100%" y1="50%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color: rgb(195, 32, 97);"></stop>
+                        <stop offset="100%" style="stop-color: rgb(248, 132, 17);"></stop>
+                    </linearGradient>
+                </defs>
+                <path id="blob"
+                    d="M456,291.5Q422,333,391.5,361Q361,389,326.5,412Q292,435,251,430.5Q210,426,154.5,433Q99,440,89,386Q79,332,71.5,291Q64,250,73.5,210Q83,170,101,128Q119,86,158.5,53Q198,20,247,35.5Q296,51,347.5,57Q399,63,429,106Q459,149,474.5,199.5Q490,250,456,291.5Z"
+                    fill="url(#gradient)"></path>
+            </svg>
+        </div>
+
+        <div class="masthead__wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color: rgb(195, 32, 97);"></stop>
+                    <stop offset="100%" style="stop-color: rgb(248, 132, 17);"></stop>
+                </linearGradient>
+                <path fill="url(#gradient)" fill-opacity="1"
+                    d="M0,224L48,192C96,160,192,96,288,85.3C384,75,480,117,576,154.7C672,192,768,224,864,245.3C960,267,1056,277,1152,282.7C1248,288,1344,288,1392,288L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+
+
     </div>
 
     <div class="portfolio"></div>

@@ -1,5 +1,4 @@
-@import "variables", "mixins", "layout", "components", "animations",
-    "media-queries";
+@import "variables", "mixins", "components", "animations", "media-queries";
 
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
@@ -8,9 +7,102 @@
 
 */
 
-/*-------------------------------------------*/
+/*----------------------------------1. Universal----*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*---------------------------------------2. Body----*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    background: $grey;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 56px 800px 1000px 500px 500px 56px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background: $grey1;
+  color: $white;
+}
+
+/*----------------------------------------3. Nav----*/
+.navbar {
+  grid-column: 1fr;
+  grid-row: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.navbar__nav {
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 1rem;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+/*-----------------------------------4. Masthead----*/
+.masthead {
+  grid-column: 1fr;
+  grid-row: 800px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, #c32061, #f88411);
+}
+
+.masthead__content {
+  height: 100%;
+}
+
+.masthead__content__links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  max-width: 240px;
+}
+
+.masthead__blob {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  width: 500px;
+  height: 500px;
+}
+
+.masthead__wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/*----------------------------------5. Portfolio----*/
+.portfolio {
+  grid-column: 1fr;
+  grid-row: 1000px;
+}
+
+/*-------------------------------------6. Skills----*/
+.skills {
+  grid-column: 1fr;
+  grid-row: 500px;
+  margin-right: 5%;
+  background: $grey2;
+}
+
+/*--------------------------------------7. About----*/
+.about {
+  grid-column: 1fr;
+  grid-row: 500px;
+}
+
+/*-------------------------------------8. Footer----*/
+footer {
+  grid-column: 1fr;
+  grid-row: 56px;
 }
