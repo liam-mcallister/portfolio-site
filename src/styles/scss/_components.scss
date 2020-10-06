@@ -7,54 +7,98 @@
 
 /*---------------------------------------1. Text----*/
 h1 {
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 h2 {
-  @extend h1;
-  font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h3 {
-  @extend h1;
-  font-size: 1.5rem;
-  color: $grey5;
-
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: $grey5;
 }
 
 /*-----------------------------------------Links----*/
 a {
-  display: inline-block;
-  color: $white;
-  text-decoration: none;
+    display: inline-block;
+    color: $white;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: $grey5;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    transition: color 1s;
+
+    &:hover {
+        color: $white;
+    }
 }
 
 /*---------------------------------------Buttons----*/
 .btn {
-  padding: 15%;
-  background: $red;
-  border-bottom: 4px solid $red2;
-  border-radius: 8px 0 8px 0;
-  background: $red;
+    padding: 15%;
+    background: $red;
+    border-bottom: 4px solid $red2;
+    border-radius: 8px 0 8px 0;
+    background: $red;
 
-  &:active {
-    transform: translateY(3px);
-    border-bottom: 3px solid $red3;
-  }
+    &:active {
+        transform: translateY(3px);
+        border-bottom: 3px solid $red3;
+    }
+}
+
+.burger-btn {
+    position: absolute;
+    top: 18px;
+    right: 38px;
+    transform: scale(2);
+    appearance: none;
+
+    &:checked + .burger-label .top {
+        transform: rotate(-45deg);
+        margin-top: 15px;
+    }
+
+    &:checked + .burger-label .middle {
+        transform: rotate(45deg);
+        margin-top: -8px;
+    }
+
+    &:checked + .burger-label .bottom {
+        opacity: 0;
+    }
+
+    &:checked + .burger-label + .navbar__nav {
+        transform: translateY(100vh);
+    }
+}
+
+.burger-label {
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 33px;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: $white;
+    transition: all 0.1s ease-in-out;
 }
 
 /*-----------------------------------------Icons----*/
 .icon {
-  width: 100%;
-  height: 100%;
-}
-
-/*-----------------------------------------Inner----*/
-.inner {
-  width: 100%;
-  height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
