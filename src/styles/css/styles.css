@@ -49,7 +49,6 @@ a {
 /*---------------------------------------Buttons----*/
 .btn {
   padding: 15%;
-  background: #d34836;
   border-bottom: 4px solid #9b3729;
   border-radius: 8px 0 8px 0;
   background: #d34836;
@@ -111,10 +110,58 @@ a {
   transition: all 0.1s ease-in-out;
 }
 
+.btn-card {
+  padding: 1rem;
+  border-bottom: 4px solid #9b3729;
+  border-radius: 8px 0 8px 0;
+  font-weight: bold;
+  background: #d34836;
+}
+
+.btn-card:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  border-bottom: 3px solid #75291f;
+}
+
 /*-----------------------------------------Icons----*/
 .icon {
   width: 100%;
   height: 100%;
+}
+
+/*-----------------------------------------Cards----*/
+.card {
+  max-width: 700px;
+  height: auto;
+  margin-bottom: 3rem;
+  border-radius: 3rem 0 3rem 0;
+  background: #282633;
+  color: #ffffff;
+}
+
+.card:last-of-type {
+  margin-bottom: 0;
+}
+
+.card__text {
+  padding: 1rem;
+}
+
+.card__links {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 3rem 0 0 0;
+}
+
+/*-----------------------------------------Lists----*/
+.list-item {
+  list-style-type: circle;
+  color: #ffffff;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -141,8 +188,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 56px calc(100vh - 56px) 1000px 500px 500px 56px;
-      grid-template-rows: 56px calc(100vh - 56px) 1000px 500px 500px 56px;
+  -ms-grid-rows: 56px calc(100vh - 56px) auto auto 500px 56px;
+      grid-template-rows: 56px calc(100vh - 56px) auto auto 500px 56px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: #262d40;
@@ -235,8 +282,18 @@ body {
 .portfolio {
   -ms-grid-column: 1;
   grid-column: 1fr;
-  -ms-grid-row: 1000;
-  grid-row: 1000px;
+  grid-row: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem 1rem;
   background-color: #262d40;
 }
 
@@ -244,16 +301,20 @@ body {
 .skills {
   -ms-grid-column: 1;
   grid-column: 1fr;
-  -ms-grid-row: 500;
-  grid-row: 500px;
+  grid-row: auto;
   background-color: #262d40;
 }
 
 .inner {
   width: 90%;
   height: 100%;
+  padding: 6rem 1rem;
   border-radius: 0 1rem 1rem 0;
   background: #282633;
+}
+
+.skills__dev, .skills__design {
+  margin-bottom: 3rem;
 }
 
 /*--------------------------------------7. About----*/
@@ -271,8 +332,9 @@ footer {
   grid-column: 1fr;
   -ms-grid-row: 56;
   grid-row: 56px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
