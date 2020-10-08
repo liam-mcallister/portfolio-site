@@ -95,6 +95,13 @@ a {
   background-color: $white;
   transition: all 0.1s ease-in-out;
 }
+.no-scroll {
+  overflow: hidden;
+}
+
+.close-menu {
+  transform: translateY(-100vh);
+}
 
 .btn-card {
   padding: 1rem;
