@@ -95,12 +95,9 @@ a {
   background-color: $white;
   transition: all 0.1s ease-in-out;
 }
+
 .no-scroll {
   overflow: hidden;
-}
-
-.close-menu {
-  transform: translateY(-100vh);
 }
 
 .btn-card {
@@ -151,7 +148,12 @@ a {
 }
 
 /*-----------------------------------------Lists----*/
+.list {
+  margin-left: 2rem;
+}
+
 .list-item {
   list-style-type: circle;
+  line-height: 2rem;
   color: $white;
 }

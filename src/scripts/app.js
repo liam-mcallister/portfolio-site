@@ -1,6 +1,5 @@
 const body = document.getElementById('body');
 const burger = document.getElementById('burger-btn');
-const navbar = document.getElementById('navbar-nav');
 const navLinks = document.querySelectorAll('.nav-item');
 
 // Disable scrolling when navigation menu is open
@@ -15,6 +14,7 @@ burger.addEventListener('click', function () {
 // Close navigation menu when link is clicked
 navLinks.forEach(function (items) {
     items.addEventListener('click', function () {
-        navbar.classList.add('close-menu');
+        burger.checked = false;
+        body.classList.remove('no-scroll');
     });
 });
