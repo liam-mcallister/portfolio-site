@@ -22,6 +22,10 @@ h3 {
   color: $grey5;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 /*-----------------------------------------Links----*/
 a {
   display: inline-block;
@@ -102,6 +106,7 @@ a {
 
 .btn-card {
   padding: 1rem;
+  margin-right: 0.8rem;
   border-bottom: 4px solid $red2;
   border-radius: 8px 0 8px 0;
   font-weight: bold;
@@ -110,6 +115,22 @@ a {
   &:active {
     transform: translateY(3px);
     border-bottom: 3px solid $red3;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.btn-card-disabled {
+  @extend .btn-card;
+  cursor: not-allowed;
+  background: $grey5;
+  border-bottom: 4px solid $grey4;
+
+  &:active {
+    transform: unset;
+    border-bottom: 4px solid $grey4;
   }
 }
 
@@ -124,6 +145,7 @@ a {
   max-width: 700px;
   height: auto;
   margin-bottom: 3rem;
+  padding: 1rem;
   border-radius: 3rem 0 3rem 0;
   background: $grey2;
   color: $white;
@@ -134,17 +156,17 @@ a {
 }
 
 .card__text {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .card__links {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 0 1rem 0;
 }
 
 .card-img {
   width: 100%;
   height: auto;
-  border-radius: 3rem 0 0 0;
+  border-radius: 2.5rem 0 0 0;
 }
 
 /*-----------------------------------------Lists----*/

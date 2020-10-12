@@ -51,6 +51,18 @@
   .burger-label {
     display: none;
   }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
