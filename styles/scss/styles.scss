@@ -19,7 +19,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 56px calc(100vh - 56px) auto auto auto 56px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
     font-size: 16px;
     background-color: $grey1;
     color: $white;
@@ -30,7 +30,7 @@ body {
     grid-column: 1fr;
     grid-row: 56px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     position: relative;
     padding: 0 2rem;
@@ -58,8 +58,6 @@ body {
     grid-row: calc(100vh - 56px);
     display: flex;
     flex-flow: column;
-    text-align: center;
-    overflow: hidden;
     position: relative;
 }
 
@@ -67,10 +65,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex: 1 1 auto;
-    width: 100%;
-    height: auto;
+    padding-left: 10%;
     background: $grey2;
 }
 
@@ -84,6 +81,19 @@ body {
 .masthead-bg {
     width: 100%;
     height: auto;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.masthead-bg--left {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    bottom: 0;
+    right: 10rem;
 }
 
 /*----------------------------------5. Portfolio----*/
@@ -116,11 +126,16 @@ body {
 }
 
 .skills__dev {
+    width: 150px;
     margin-bottom: 3rem;
 }
 
 .skills__design {
     @extend .skills__dev;
+}
+
+.skills__other {
+    width: 150px;
 }
 
 /*--------------------------------------7. About----*/

@@ -12,25 +12,30 @@
 */
 /*---------------------------------------1. Text----*/
 h1 {
-  margin-bottom: 1rem;
   font-size: 2rem;
-  font-weight: bold;
+  letter-spacing: 0.5rem;
 }
 
 h2 {
   margin-bottom: 2rem;
   font-size: 1.5rem;
-  color: #6b6f77;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
 }
 
 h3 {
   margin-bottom: 2rem;
   font-size: 1.2rem;
-  color: #6b6f77;
 }
 
 p {
   line-height: 1.5rem;
+  color: #6b6f77;
+}
+
+.masthead-para {
+  margin: 2rem 0;
+  font-weight: bold;
 }
 
 small {
@@ -145,8 +150,9 @@ a {
 
 .btn-card-disabled {
   cursor: not-allowed;
-  background: #6b6f77;
   border-bottom: 4px solid #475266;
+  background: #6b6f77;
+  color: #34343e;
 }
 
 .btn-card-disabled:active {
@@ -180,6 +186,10 @@ a {
   padding: 1rem 0;
 }
 
+.card__text p {
+  color: #ffffff;
+}
+
 .card-img {
   width: 100%;
   height: auto;
@@ -194,7 +204,7 @@ a {
 .list-item {
   list-style-type: circle;
   line-height: 2rem;
-  color: #ffffff;
+  color: #6b6f77;
 }
 
 /*----------------------------------------------------
@@ -219,7 +229,7 @@ body {
       grid-template-columns: 1fr;
   -ms-grid-rows: 56px calc(100vh - 56px) auto auto auto 56px;
       grid-template-rows: 56px calc(100vh - 56px) auto auto auto 56px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   font-size: 16px;
   background-color: #262d40;
   color: #ffffff;
@@ -234,9 +244,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -282,8 +292,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  text-align: center;
-  overflow: hidden;
   position: relative;
 }
 
@@ -298,14 +306,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  width: 100%;
-  height: auto;
+  padding-left: 10%;
   background: #282633;
 }
 
@@ -321,6 +328,17 @@ body {
 .masthead-bg {
   width: 100%;
   height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.masthead-bg--left {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 10rem;
 }
 
 /*----------------------------------5. Portfolio----*/
@@ -369,7 +387,12 @@ body {
 }
 
 .skills__dev, .skills__design {
+  width: 150px;
   margin-bottom: 3rem;
+}
+
+.skills__other {
+  width: 150px;
 }
 
 /*--------------------------------------7. About----*/
@@ -419,6 +442,21 @@ footer {
 }
 
 /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .masthead-para {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 600px) {
   .inner {
     display: -webkit-box;
@@ -436,18 +474,29 @@ footer {
             align-items: flex-start;
   }
   .skills__dev, .skills__design {
+    width: auto;
     margin-bottom: 0;
   }
   .skills__design {
+    width: auto;
     margin-bottom: 0;
   }
   .skills__other {
-    margin-bottom: 0;
+    width: auto;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
   .navbar__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -505,5 +554,16 @@ footer {
 }
 
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
