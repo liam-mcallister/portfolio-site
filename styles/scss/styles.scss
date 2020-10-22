@@ -76,7 +76,7 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: url(/images/background3.jpg) no-repeat fixed;
+    background: url("../../images/background3.jpg") no-repeat fixed;
     background-size: cover;
     background-attachment:fixed;
 }
@@ -163,7 +163,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 6rem 0 6rem 1rem;
-    background: url(/images/background.jpg) no-repeat fixed;
+    background: url("../../images/background.jpg") no-repeat fixed;
     background-size: cover;
     background-attachment:fixed;
 }
