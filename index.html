@@ -30,7 +30,9 @@
     <meta name="twitter:description" content="" />
     <meta name="twitter:image" content="" />
     <!--CDN's-->
-    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
     <!--STYLESHEETS-->
     <link rel="stylesheet" href="styles/css/reset.css" />
     <link rel="stylesheet" href="styles/css/styles.css" />
@@ -38,7 +40,7 @@
 
 <body id="body">
 
-    <nav role="navigation" class="navbar">
+    <nav role="navigation" class="navbar" id="navbar">
         <input class="burger-btn" type="checkbox" id="burger-btn" name="burger-btn" />
         <label class="burger-label" for="burger-btn">
             <span class="bar top"></span>
@@ -56,7 +58,8 @@
     <div class="masthead">
         <div class="masthead__content">
             <div class="masthead__content__text">
-                <h1>Liam McAllister</h1>
+                <h1>Liam</h1>
+                <h1>McAllister</h1>
                 <p class="masthead-para">Front-end Web Developer</p>
             </div>
             <div class="masthead__content__links">
@@ -75,74 +78,77 @@
                 </a>
             </div>
         </div>
-        <div class="masthead__bottom">
-            <img class="masthead-bg--left" src="images/wave2.svg" alt="">
-            <img class="masthead-bg" src="images/wave.svg" alt="">
-        </div>
     </div>
 
     <div id="portfolio" class="portfolio">
         <h2>Portfolio</h2>
-        <div class="card">
-            <div class="card__image">
-                <img class="card-img" src="images/lmcdesign.jpg" alt="">
+        <div class="card-container">
+            <div class="card">
+                <div class="card__image">
+                    <img class="card-img" src="images/lmcdesign.jpg" alt="">
+                </div>
+                <div class="card__text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id expedita eum obcaecati libero quidem
+                        est, laudantium adipisci assumenda! Repellat quidem tenetur cupiditate ipsum nemo soluta
+                        quibusdam
+                        doloribus, enim dicta eos!</p>
+                </div>
+                <div class="card__links">
+                    <a class="btn-card" href="https://liammcallister.co.uk/" target="_blank">Live Site</a>
+                    <a class="btn-card-disabled">Private Repo</a>
+                </div>
             </div>
-            <div class="card__text">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id expedita eum obcaecati libero quidem
-                    est, laudantium adipisci assumenda! Repellat quidem tenetur cupiditate ipsum nemo soluta quibusdam
-                    doloribus, enim dicta eos!</p>
+            <div class="card">
+                <div class="card__image">
+                    <img class="card-img" src="images/blackcab.jpg" alt="">
+                </div>
+                <div class="card__text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id expedita eum obcaecati libero quidem
+                        est, laudantium adipisci assumenda! Repellat quidem tenetur cupiditate ipsum nemo soluta
+                        quibusdam
+                        doloribus, enim dicta eos!</p>
+                </div>
+                <div class="card__links">
+                    <a class="btn-card" href="https://liam-mcallister.github.io/blackcab-site/" target="_blank">Live
+                        Site</a>
+                    <a class="btn-card" href="https://github.com/liam-mcallister/blackcab-site" target="_blank">Github
+                        Repo</a>
+                </div>
             </div>
-            <div class="card__links">
-                <a class="btn-card" href="https://liammcallister.co.uk/" target="_blank">Live Site</a>
-                <a class="btn-card-disabled">Private Repo</a>
+            <div class="card">
+                <div class="card__image">
+                    <img class="card-img" src="images/selfstorage.jpg" alt="">
+                </div>
+                <div class="card__text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id expedita eum obcaecati libero quidem
+                        est, laudantium adipisci assumenda! Repellat quidem tenetur cupiditate ipsum nemo soluta
+                        quibusdam
+                        doloribus, enim dicta eos!</p>
+                </div>
+                <div class="card__links">
+                    <a class="btn-card" href="https://liam-mcallister.github.io/storage-theme/" target="_blank">Live
+                        Site</a>
+                    <a class="btn-card" href="https://github.com/liam-mcallister/storage-theme" target="_blank">Github
+                        Repo</a>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card__image">
-                <img class="card-img" src="images/blackcab.jpg" alt="">
-            </div>
-            <div class="card__text">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id expedita eum obcaecati libero quidem
-                    est, laudantium adipisci assumenda! Repellat quidem tenetur cupiditate ipsum nemo soluta quibusdam
-                    doloribus, enim dicta eos!</p>
-            </div>
-            <div class="card__links">
-                <a class="btn-card" href="https://liam-mcallister.github.io/blackcab-site/" target="_blank">Live
-                    Site</a>
-                <a class="btn-card" href="https://github.com/liam-mcallister/blackcab-site" target="_blank">Github
-                    Repo</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card__image">
-                <img class="card-img" src="images/selfstorage.jpg" alt="">
-            </div>
-            <div class="card__text">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id expedita eum obcaecati libero quidem
-                    est, laudantium adipisci assumenda! Repellat quidem tenetur cupiditate ipsum nemo soluta quibusdam
-                    doloribus, enim dicta eos!</p>
-            </div>
-            <div class="card__links">
-                <a class="btn-card" href="https://liam-mcallister.github.io/storage-theme/" target="_blank">Live
-                    Site</a>
-                <a class="btn-card" href="https://github.com/liam-mcallister/storage-theme" target="_blank">Github
-                    Repo</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card__image">
-                <img class="card-img" src="images/coffeeshop.jpg" alt="">
-            </div>
-            <div class="card__text">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id expedita eum obcaecati libero quidem
-                    est, laudantium adipisci assumenda! Repellat quidem tenetur cupiditate ipsum nemo soluta quibusdam
-                    doloribus, enim dicta eos!</p>
-            </div>
-            <div class="card__links">
-                <a class="btn-card" href="https://liam-mcallister.github.io/coffee-shop-site/" target="_blank">Live
-                    Site</a>
-                <a class="btn-card" href="https://github.com/liam-mcallister/coffee-shop-site" target="_blank">Github
-                    Repo</a>
+            <div class="card">
+                <div class="card__image">
+                    <img class="card-img" src="images/coffeeshop.jpg" alt="">
+                </div>
+                <div class="card__text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id expedita eum obcaecati libero quidem
+                        est, laudantium adipisci assumenda! Repellat quidem tenetur cupiditate ipsum nemo soluta
+                        quibusdam
+                        doloribus, enim dicta eos!</p>
+                </div>
+                <div class="card__links">
+                    <a class="btn-card" href="https://liam-mcallister.github.io/coffee-shop-site/" target="_blank">Live
+                        Site</a>
+                    <a class="btn-card" href="https://github.com/liam-mcallister/coffee-shop-site"
+                        target="_blank">Github
+                        Repo</a>
+                </div>
             </div>
         </div>
     </div>
@@ -195,8 +201,10 @@
     </div>
 
     <footer>
+        <div class="to-top" id="to-top"></div>
         <small>Created by Liam McAllister</small>
     </footer>
+
 
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>

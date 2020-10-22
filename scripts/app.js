@@ -1,5 +1,6 @@
 const body = document.getElementById('body');
 const burger = document.getElementById('burger-btn');
+const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('.nav-item');
 
 // Disable scrolling when navigation menu is open
@@ -18,3 +19,28 @@ navLinks.forEach(function (items) {
         body.classList.remove('no-scroll');
     });
 });
+
+// Hide menu when scrolling down and show when scrolling up
+let lastPos = 0;
+function hideNav() {
+    let currentPos = window.scrollY;
+    if (currentPos > lastPos) {
+        navbar.classList.add('slide-up');
+        navbar.classList.remove('slide-down');
+    } else {
+        navbar.classList.remove('slide-up');
+        navbar.classList.add('slide-down');
+    }
+    lastPos = currentPos;
+};
+window.addEventListener('scroll', hideNav);
+
+// Change the navbar's bg color to white when user scrolls over 50px from top of page
+function changeNav() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        navbar.classList.add('nav-white');
+    } else {
+        navbar.classList.remove('nav-white');
+    }
+};
+window.addEventListener("scroll", changeNav);
