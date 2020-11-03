@@ -82,9 +82,7 @@ a {
   left: 38px;
   -webkit-transform: scale(2);
           transform: scale(2);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  opacity: 0;
 }
 
 .burger-btn:checked + .burger-label .top {

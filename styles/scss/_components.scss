@@ -75,7 +75,7 @@ a {
   top: 18px;
   left: 38px;
   transform: scale(2);
-  appearance: none;
+  opacity: 0;
 
   &:checked + .burger-label .top {
     transform: rotate(-45deg);
