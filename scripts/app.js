@@ -39,9 +39,9 @@ window.addEventListener("scroll", hideNav);
 // Change the navbar's bg color to white when user scrolls over 50px from top of page
 function changeNav() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    navbar.classList.add("nav-white");
+    navbar.classList.add("nav-purple");
   } else {
-    navbar.classList.remove("nav-white");
+    navbar.classList.remove("nav-purple");
   }
 }
 window.addEventListener("scroll", changeNav);

@@ -12,7 +12,7 @@
 */
 /*---------------------------------------1. Text----*/
 h1, h2 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-size: 3rem;
 }
 
@@ -52,15 +52,14 @@ a {
 }
 
 .nav-link {
-  color: #282633;
   margin: 1.5rem 0;
   padding: 0.5rem 1rem;
-  -webkit-transition: color 1s;
-  transition: color 1s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .nav-link:hover {
-  color: #8c7cc5;
+  color: #282633;
 }
 
 /*---------------------------------------Buttons----*/
@@ -122,7 +121,7 @@ a {
   width: 30px;
   height: 3px;
   margin: 5px 0;
-  background-color: #475266;
+  background-color: #ffffff;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -301,7 +300,7 @@ body {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-color: #6b6f77;
+  background-color: #574d7a;
 }
 
 .slide-up {
@@ -314,8 +313,8 @@ body {
           transform: translateY(0);
 }
 
-.nav-white {
-  background-color: #ffffff;
+.nav-purple {
+  background-color: #574d7a;
 }
 
 /*-----------------------------------4. Masthead----*/
@@ -403,6 +402,10 @@ body {
   padding: 6rem 0;
 }
 
+.skills__header {
+  text-align: center;
+}
+
 .inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,6 +469,17 @@ body {
   border-radius: 3rem 0 0 3rem;
 }
 
+/*------------------------------------8. Contact----*/
+.contact {
+  width: 100%;
+  height: auto;
+  padding: 6rem 0;
+}
+
+.contact__header {
+  text-align: center;
+}
+
 /*-------------------------------------8. Footer----*/
 footer {
   display: -webkit-box;
@@ -480,6 +494,7 @@ footer {
   width: 100%;
   height: 100px;
   position: relative;
+  background: #282633;
 }
 
 /*---------------------------------Small Devices----*/

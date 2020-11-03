@@ -7,7 +7,7 @@
 
 /*---------------------------------------1. Text----*/
 h1 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-size: 3rem;
 }
 
@@ -48,13 +48,12 @@ a {
 }
 
 .nav-link {
-  color: $grey2;
   margin: 1.5rem 0;
   padding: 0.5rem 1rem;
-  transition: color 1s;
+  transition: color 0.5s;
 
   &:hover {
-    color: $purple1;
+    color: $grey2;
   }
 }
 
@@ -110,7 +109,7 @@ a {
   width: 30px;
   height: 3px;
   margin: 5px 0;
-  background-color: $grey4;
+  background-color: $white;
   transition: all 0.1s ease-in-out;
 }
 
