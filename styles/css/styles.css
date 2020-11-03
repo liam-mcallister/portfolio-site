@@ -79,7 +79,7 @@ a {
 .burger-btn {
   position: absolute;
   top: 18px;
-  right: 38px;
+  left: 38px;
   -webkit-transform: scale(2);
           transform: scale(2);
   -webkit-appearance: none;
