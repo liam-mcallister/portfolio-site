@@ -12,7 +12,7 @@
 */
 /*---------------------------------------1. Text----*/
 h1, h2 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   font-size: 3rem;
 }
 
@@ -52,40 +52,37 @@ a {
 }
 
 .nav-link {
-  color: #282633;
   margin: 1.5rem 0;
   padding: 0.5rem 1rem;
-  -webkit-transition: color 1s;
-  transition: color 1s;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .nav-link:hover {
-  color: #ffffff;
+  color: #282633;
 }
 
 /*---------------------------------------Buttons----*/
 .btn {
   padding: 15%;
-  border-bottom: 4px solid #962377;
+  border-bottom: 4px solid #6f629b;
   border-radius: 8px 0 8px 0;
-  background: #b92b92;
+  background: #8c7cc5;
 }
 
 .btn:active {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
-  border-bottom: 3px solid #6b1955;
+  border-bottom: 3px solid #574d7a;
 }
 
 .burger-btn {
   position: absolute;
   top: 18px;
-  right: 38px;
+  left: 38px;
   -webkit-transform: scale(2);
           transform: scale(2);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  opacity: 0;
 }
 
 .burger-btn:checked + .burger-label .top {
@@ -122,7 +119,7 @@ a {
   width: 30px;
   height: 3px;
   margin: 5px 0;
-  background-color: #282633;
+  background-color: #ffffff;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -134,15 +131,15 @@ a {
 .btn-card, .btn-card-disabled {
   padding: 1rem;
   margin-right: 0.8rem;
-  border-bottom: 4px solid #962377;
+  border-bottom: 4px solid #6f629b;
   border-radius: 8px 0 8px 0;
-  background: #b92b92;
+  background: #8c7cc5;
 }
 
 .btn-card:active, .btn-card-disabled:active {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
-  border-bottom: 3px solid #6b1955;
+  border-bottom: 3px solid #574d7a;
 }
 
 .btn-card:last-of-type, .btn-card-disabled:last-of-type {
@@ -166,17 +163,18 @@ a {
   width: 50px;
   height: 50px;
   position: absolute;
-  bottom: 80px;
+  bottom: 75px;
+  padding: 0.5rem;
   border-radius: 0.5rem;
-  border-bottom: 4px solid #962377;
+  border-bottom: 4px solid #6f629b;
   cursor: pointer;
-  background: #e24343;
+  background: #8c7cc5;
 }
 
 .to-top:active {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
-  border-bottom: 3px solid #6b1955;
+  border-bottom: 3px solid #574d7a;
 }
 
 /*-----------------------------------------Icons----*/
@@ -300,7 +298,7 @@ body {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-color: #6b6f77;
+  background-color: #574d7a;
 }
 
 .slide-up {
@@ -313,8 +311,8 @@ body {
           transform: translateY(0);
 }
 
-.nav-white {
-  background-color: #ffffff;
+.nav-purple {
+  background-color: #574d7a;
 }
 
 /*-----------------------------------4. Masthead----*/
@@ -329,9 +327,8 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("../../images/background3.jpg") no-repeat fixed;
+  background: url("../../images/background3.jpg") no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .masthead__content {
@@ -403,6 +400,10 @@ body {
   padding: 6rem 0;
 }
 
+.skills__header {
+  text-align: center;
+}
+
 .inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,9 +443,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 6rem 0 6rem 1rem;
-  background: url("../../images/background.jpg") no-repeat fixed;
+  background: url("../../images/background.jpg") no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .about__text {
@@ -467,6 +467,17 @@ body {
   border-radius: 3rem 0 0 3rem;
 }
 
+/*------------------------------------8. Contact----*/
+.contact {
+  width: 100%;
+  height: auto;
+  padding: 6rem 0;
+}
+
+.contact__header {
+  text-align: center;
+}
+
 /*-------------------------------------8. Footer----*/
 footer {
   display: -webkit-box;
@@ -481,6 +492,7 @@ footer {
   width: 100%;
   height: 100px;
   position: relative;
+  background: #282633;
 }
 
 /*---------------------------------Small Devices----*/
