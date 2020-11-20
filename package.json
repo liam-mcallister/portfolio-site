@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "My portfolio website.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liam-mcallister/portfolio-site.git"
+  },
+  "author": "Liam McAllister",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liam-mcallister/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/liam-mcallister/portfolio-site#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-terser": "^2.0.0"
+  }
+}
