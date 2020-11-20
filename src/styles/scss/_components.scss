@@ -185,6 +185,24 @@ a {
   }
 }
 
+.card-bullets {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.bullet {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  font-size: 0.7rem;
+  border-radius: 0.5rem;
+  background: $green;
+  color: $grey2;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
 .card__text {
   padding: 1rem 0;
 
