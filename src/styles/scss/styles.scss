@@ -1,9 +1,19 @@
-@import "variables", "components", "animations";
+@import "variables", "components";
 
 /*----------------------------------------------------
 ---------------------------------Table of Contents----
 ------------------------------------------------------
 
+1. Universal
+2. HTML
+3. Body
+4. Nav
+5. Masthead
+6. Portfolio
+7. Skills
+8. About
+9. Contact
+10. Footer
 
 */
 
@@ -14,21 +24,21 @@
     box-sizing: border-box;
 }
 
-/*------------------------------------------HTML----*/
+/*---------------------------------------2. HTML----*/
 html {
     height: 100%;
 }
 
-/*---------------------------------------2. Body----*/
+/*---------------------------------------3. Body----*/
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     position: relative;
     background: $grey1;
     color: $white;
 }
 
-/*----------------------------------------3. Nav----*/
+/*----------------------------------------4. Nav----*/
 .navbar {
     display: flex;
     justify-content: flex-start;
@@ -69,7 +79,7 @@ body {
     background-color: $purple3;
 }
 
-/*-----------------------------------4. Masthead----*/
+/*-----------------------------------5. Masthead----*/
 .masthead {
     display: flex;
     flex-flow: column;
@@ -114,7 +124,7 @@ body {
     right: 10rem;
 }
 
-/*----------------------------------5. Portfolio----*/
+/*----------------------------------6. Portfolio----*/
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -124,7 +134,7 @@ body {
     padding: 6rem 1rem;
 }
 
-/*-------------------------------------6. Skills----*/
+/*-------------------------------------7. Skills----*/
 .skills {
     width: 100%;
     height: auto;
@@ -159,7 +169,7 @@ body {
     width: 150px;
 }
 
-/*--------------------------------------7. About----*/
+/*--------------------------------------8. About----*/
 .about {
     width: 100%;
     height: auto;
@@ -193,7 +203,7 @@ body {
     border-radius: 3rem 0 0 3rem;
 }
 
-/*------------------------------------8. Contact----*/
+/*------------------------------------9. Contact----*/
 .contact {
     width: 100%;
     height: auto;
@@ -204,7 +214,7 @@ body {
     text-align: center;
 }
 
-/*-------------------------------------8. Footer----*/
+/*-------------------------------------10. Footer----*/
 footer {
     display: flex;
     justify-content: center;

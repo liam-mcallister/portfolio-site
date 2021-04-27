@@ -2,6 +2,12 @@
 ---------------------------------Table of Contents----
 ------------------------------------------------------
 
+1. Text
+2. Links
+3. Buttons
+4. Icons
+5. Cards
+6. Lists
 
 */
 /*---------------------------------------1. Text----*/
@@ -38,7 +44,7 @@ small {
   font-size: 0.8rem;
 }
 
-/*-----------------------------------------Links----*/
+/*--------------------------------------2. Links----*/
 a {
   display: inline-block;
   color: #ffffff;
@@ -56,7 +62,7 @@ a {
   color: #282633;
 }
 
-/*---------------------------------------Buttons----*/
+/*------------------------------------3. Buttons----*/
 .btn {
   padding: 15%;
   border-bottom: 4px solid #6f629b;
@@ -171,13 +177,13 @@ a {
   border-bottom: 3px solid #574d7a;
 }
 
-/*-----------------------------------------Icons----*/
+/*--------------------------------------4. Icons----*/
 .icon {
   width: 100%;
   height: 100%;
 }
 
-/*-----------------------------------------Cards----*/
+/*--------------------------------------5. Cards----*/
 .card {
   max-width: 500px;
   height: auto;
@@ -226,7 +232,7 @@ a {
   border-radius: 2.5rem 0 0 0;
 }
 
-/*-----------------------------------------Lists----*/
+/*--------------------------------------6. Lists----*/
 .list {
   margin-left: 2rem;
 }
@@ -241,6 +247,16 @@ a {
 ---------------------------------Table of Contents----
 ------------------------------------------------------
 
+1. Universal
+2. HTML
+3. Body
+4. Nav
+5. Masthead
+6. Portfolio
+7. Skills
+8. About
+9. Contact
+10. Footer
 
 */
 /*----------------------------------1. Universal----*/
@@ -251,21 +267,21 @@ a {
           box-sizing: border-box;
 }
 
-/*------------------------------------------HTML----*/
+/*---------------------------------------2. HTML----*/
 html {
   height: 100%;
 }
 
-/*---------------------------------------2. Body----*/
+/*---------------------------------------3. Body----*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   position: relative;
   background: #262d40;
   color: #ffffff;
 }
 
-/*----------------------------------------3. Nav----*/
+/*----------------------------------------4. Nav----*/
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,7 +345,7 @@ body {
   background-color: #574d7a;
 }
 
-/*-----------------------------------4. Masthead----*/
+/*-----------------------------------5. Masthead----*/
 .masthead {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,7 +406,7 @@ body {
   right: 10rem;
 }
 
-/*----------------------------------5. Portfolio----*/
+/*----------------------------------6. Portfolio----*/
 .portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,7 +423,7 @@ body {
   padding: 6rem 1rem;
 }
 
-/*-------------------------------------6. Skills----*/
+/*-------------------------------------7. Skills----*/
 .skills {
   width: 100%;
   height: auto;
@@ -445,7 +461,7 @@ body {
   width: 150px;
 }
 
-/*--------------------------------------7. About----*/
+/*--------------------------------------8. About----*/
 .about {
   width: 100%;
   height: auto;
@@ -485,7 +501,7 @@ body {
   border-radius: 3rem 0 0 3rem;
 }
 
-/*------------------------------------8. Contact----*/
+/*------------------------------------9. Contact----*/
 .contact {
   width: 100%;
   height: auto;
@@ -496,7 +512,7 @@ body {
   text-align: center;
 }
 
-/*-------------------------------------8. Footer----*/
+/*-------------------------------------10. Footer----*/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,7 +529,17 @@ footer {
   background: #282633;
 }
 
-/*---------------------------------Small Devices----*/
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Small Devices
+2. Medium Devices
+3. Large Devices
+4. Extra Large Devices
+
+*/
+/*------------------------------1. Small Devices----*/
 @media (min-width: 576px) {
   h1, h2 {
     font-size: 5rem;
@@ -552,7 +578,7 @@ footer {
   }
 }
 
-/*--------------------------------Medium Devices----*/
+/*-----------------------------2. Medium Devices----*/
 @media (min-width: 768px) {
   h1, h2 {
     font-size: 7rem;
@@ -620,7 +646,7 @@ footer {
   }
 }
 
-/*---------------------------------Large Devices----*/
+/*------------------------------3. Large Devices----*/
 @media (min-width: 900px) {
   .card-container {
     display: -ms-grid;
@@ -645,7 +671,7 @@ footer {
   }
 }
 
-/*---------------------------Extra Large Devices----*/
+/*------------------------4. Extra Large Devices----*/
 @media (min-width: 1200px) {
   h1, h2 {
     font-size: 11rem;
