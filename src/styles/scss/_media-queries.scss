@@ -5,7 +5,6 @@
 1. Small Devices
 2. Medium Devices
 3. Large Devices
-4. Extra Large Devices
 
 */
 
@@ -111,17 +110,6 @@
 @media (min-width: 992px) {
     h1 {
         font-size: 9rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-}
-
-/*------------------------4. Extra Large Devices----*/
-@media (min-width: 1200px) {
-    h1 {
-        font-size: 11rem;
     }
 
     h2 {
