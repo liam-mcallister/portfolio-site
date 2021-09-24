@@ -4,324 +4,491 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html lang="en" class="no-js">
-<!--<![endif]-->
+    <!--<![endif]-->
 
-<head>
-    <!--METADATA-->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Liam McAllister's Portfolio</title>
-    <link rel="icon" href="images/icons/favicon.ico" type="image/icon" />
-    <meta name="author" content="Liam McAllister" />
-    <meta name="keywords"
-        content="web developer, website developer, front-end developer, developer, portfolio, portfolio website, web design, web development" />
-    <meta name="description" content="I am a front-end web developer and this is my portfolio." />
-    <!--OPENGRAPH METADATA-->
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.liamsportfolio.site/" />
-    <meta property="og:title" content="Liam McAllister's Portfolio" />
-    <meta property="og:description" content="I am a front-end web developer and this is my portfolio." />
-    <meta property="og:image" content="" />
-    <meta property="og:image:type" content="image/jpg" />
-    <!--TWITTER METADATA-->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Liam McAllister's Portfolio" />
-    <meta name="twitter:description" content="I am a front-end web developer and this is my portfolio." />
-    <meta name="twitter:image" content="" />
-    <!--CDN's-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Permanent+Marker&display=swap"
-        rel="stylesheet">
-    <!--STYLESHEETS-->
-    <!-- <link rel="stylesheet" href="src/styles/css/reset.css" />
-    <link rel="stylesheet" href="src/styles/css/styles.css" /> -->
-    <link rel="stylesheet" href="build/styles/styles.min.css" />
-</head>
+    <head>
+        <!--METADATA-->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Liam McAllister's Portfolio</title>
+        <link rel="icon" href="images/icons/favicon.ico" type="image/icon" />
+        <meta name="author" content="Liam McAllister" />
+        <meta
+            name="keywords"
+            content="web developer, website developer, front-end developer, developer, portfolio, portfolio website, web design, web development"
+        />
+        <meta
+            name="description"
+            content="I am a front-end web developer and this is my portfolio."
+        />
+        <!--OPENGRAPH METADATA-->
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.liamsportfolio.site/" />
+        <meta property="og:title" content="Liam McAllister's Portfolio" />
+        <meta
+            property="og:description"
+            content="I am a front-end web developer and this is my portfolio."
+        />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpg" />
+        <!--TWITTER METADATA-->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Liam McAllister's Portfolio" />
+        <meta
+            name="twitter:description"
+            content="I am a front-end web developer and this is my portfolio."
+        />
+        <meta name="twitter:image" content="" />
+        <!--CDN's-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Permanent+Marker&display=swap"
+            rel="stylesheet"
+        />
+        <!--STYLESHEETS-->
+        <!-- <link rel="stylesheet" href="src/styles/css/reset.css" />
+        <link rel="stylesheet" href="src/styles/css/styles.css" /> -->
+        <link rel="stylesheet" href="build/styles/styles.min.css" />
+    </head>
 
-<body id="body">
-
-    <nav role="navigation" class="navbar" id="navbar">
-        <input class="burger-btn" type="checkbox" id="burger-btn" name="burger-btn" />
-        <label class="burger-label" for="burger-btn">
-            <span class="bar top"></span>
-            <span class="bar middle"></span>
-            <span class="bar bottom"></span>
-        </label>
-        <ul id="navbar-nav" class="navbar__nav">
-            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="masthead">
-        <div class="masthead__content">
-            <div class="masthead__content__text">
-                <h1>Liam</h1>
-                <h1>McAllister</h1>
-                <p class="masthead-para">Front-end Web Developer</p>
-            </div>
-            <div class="masthead__content__links">
-                <a class="btn" target="_blank" href="https://www.linkedin.com/in/liam-mcallister-598268192/"
-                    title="Linkedin">
-                    <img class="icon" src="images/icons/linkedin.svg" alt="Linkedin icon">
-                </a>
-                <a class="btn" target="_blank" href="https://github.com/liam-mcallister" title="Github">
-                    <img class="icon" src="images/icons/github.svg" alt="Github icon">
-                </a>
-                <a class="btn" target="_blank" href="docs/CV.pdf" title="CV">
-                    <img class="icon" src="images/icons/cv.svg" alt="Document icon">
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div id="portfolio" class="portfolio">
-        <div class="portfolio__inner">
-            <h2>Portfolio</h2>
-            <div class="card-container">
-                <div class="card">
-                    <div class="card__image">
-                        <img class="card-img" src="images/screenshots/lmcdesign.jpg" alt="Freelance site screenshot">
-                    </div>
-                    <div class="card__text">
-                        <h3 class="card__header">liammcallister.co.uk</h3>
-                        <ul class="card-bullets">
-                            <li class="bullet">Bootstrap</li>
-                            <li class="bullet">Sass</li>
-                            <li class="bullet">jQuery</li>
-                            <li class="bullet">PHP</li>
-                        </ul>
-                        <p>Here I wanted users to easily see what I offer, what I’ve created
-                            and how to get in touch. I used Gulp to concatenate and minify the CSS / JavaScript for
-                            faster
-                            loading. The contact form also has PHP server side validation.</p>
-                    </div>
-                    <div class="card__links">
-                        <a class="btn-card" href="https://liammcallister.co.uk/" target="_blank">Live Site</a>
-                        <a class="btn-card-disabled">Private Repo</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image">
-                        <img class="card-img" src="images/screenshots/blackcab.jpg"
-                            alt="Blackcab tours site screenshot">
-                    </div>
-                    <div class="card__text">
-                        <h3 class="card__header">Bel-Cab Tours</h3>
-                        <ul class="card-bullets">
-                            <li class="bullet">Bootstrap</li>
-                            <li class="bullet">Sass</li>
-                            <li class="bullet">jQuery</li>
-                        </ul>
-                        <p>My objective was to create a clean and responsive site for a small black cab tours company.
-                            The
-                            contact form is validated with a jQuery plugin and a local storage token is used to
-                            show/hide
-                            the cookie policy banner.</p>
-                    </div>
-                    <div class="card__links">
-                        <a class="btn-card" href="https://liam-mcallister.github.io/blackcab-site/" target="_blank">Live
-                            Site</a>
-                        <a class="btn-card" href="https://github.com/liam-mcallister/blackcab-site"
-                            target="_blank">Github
-                            Repo</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image">
-                        <img class="card-img" src="images/screenshots/selfstorage.jpg"
-                            alt="Self storage site screenshot">
-                    </div>
-                    <div class="card__text">
-                        <h3 class="card__header">The Storage Nook</h3>
-                        <ul class="card-bullets">
-                            <li class="bullet">HTML</li>
-                            <li class="bullet">Sass</li>
-                            <li class="bullet">JavaScript</li>
-                        </ul>
-                        <p>For this site I decided to move away from frameworks and libraries and build everything from
-                            scratch. I made use of tabs and an accordion to display vital information like the FAQ and
-                            storage sizes.</p>
-                    </div>
-                    <div class="card__links">
-                        <a class="btn-card" href="https://liam-mcallister.github.io/storage-site/" target="_blank">Live
-                            Site</a>
-                        <a class="btn-card" href="https://github.com/liam-mcallister/storage-site"
-                            target="_blank">Github
-                            Repo</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image">
-                        <img class="card-img" src="images/screenshots/coffeeshop.jpg" alt="Coffee shop site screenshot">
-                    </div>
-                    <div class="card__text">
-                        <h3 class="card__header">Cuppuccino Café</h3>
-                        <ul class="card-bullets">
-                            <li class="bullet">HTML</li>
-                            <li class="bullet">Sass</li>
-                            <li class="bullet">jQuery</li>
-                        </ul>
-                        <p>My wife came up with the idea to create a website for a cafe with the ability for users to
-                            book a
-                            table. I used jQuery plugins for the image gallery, scroll animations and form validation.
-                            Utilizes the Google Maps JavaScript API.</p>
-                    </div>
-                    <div class="card__links">
-                        <a class="btn-card" href="https://liam-mcallister.github.io/coffee-shop-site/"
-                            target="_blank">Live
-                            Site</a>
-                        <a class="btn-card" href="https://github.com/liam-mcallister/coffee-shop-site"
-                            target="_blank">Github Repo</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__image">
-                        <img class="card-img" src="images/screenshots/todo.jpg" alt="Task tracker site screenshot">
-                    </div>
-                    <div class="card__text">
-                        <h3 class="card__header">Task Tracker</h3>
-                        <ul class="card-bullets">
-                            <li class="bullet">React</li>
-                            <li class="bullet">CSS</li>
-                        </ul>
-                        <p>Moving on to React, I choose to create a Task Tracker app which allows users to add, delete
-                            and
-                            edit tasks. Users also have the option to filter the tasks by whether or not they have been
-                            completed or not.</p>
-                    </div>
-                    <div class="card__links">
-                        <a class="btn-card" href="https://liam-mcallister.github.io/todo/" target="_blank">Live
-                            Site</a>
-                        <a class="btn-card" href="https://github.com/liam-mcallister/todo" target="_blank">Github
-                            Repo</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__image">
-                        <img class="card-img" src="images/screenshots/movie-database.jpg"
-                            alt="Movie Finder site screenshot">
-                    </div>
-                    <div class="card__text">
-                        <h3 class="card__header">Movie Finder</h3>
-                        <ul class="card-bullets">
-                            <li class="bullet">React</li>
-                            <li class="bullet">CSS</li>
-                        </ul>
-                        <p>This movie database searcher app makes use of the OMDB API. When a user searches for a movie,
-                            the
-                            app sends a request to their database and displays the name, date and poster of each movie
-                            returned in the results.</p>
-                    </div>
-                    <div class="card__links">
-                        <a class="btn-card" href="https://liam-mcallister.github.io/movie-database/"
-                            target="_blank">Live
-                            Site</a>
-                        <a class="btn-card" href="https://github.com/liam-mcallister/movie-database"
-                            target="_blank">Github
-                            Repo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="skills" class="skills">
-        <div class="skills__header">
-            <h2>Skills</h2>
-        </div>
-        <div class="inner">
-            <div class="skills__dev">
-                <h3>Development</h3>
-                <ul class="list">
-                    <li class="list-item">HTML5</li>
-                    <li class="list-item">CSS3</li>
-                    <li class="list-item">JavaScript</li>
-                    <li class="list-item">React</li>
-                    <li class="list-item">Bootstrap</li>
-                    <li class="list-item">jQuery</li>
-                    <li class="list-item">Sass</li>
-                </ul>
-            </div>
-            <div class="skills__design">
-                <h3>Design</h3>
-                <ul class="list">
-                    <li class="list-item">Balsamiq</li>
-                    <li class="list-item">Figma</li>
-                </ul>
-            </div>
-            <div class="skills__other">
-                <h3>Other</h3>
-                <ul class="list">
-                    <li class="list-item">Git</li>
-                    <li class="list-item">Github</li>
-                    <li class="list-item">Gulp</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="about" class="about">
-        <div class="about__text">
-            <div class="about__text__inner">
-                <h2>About Me</h2>
-                <p class="about-para">I am a Front-end Web Developer currently living in Lisburn.</p>
-                <p class="about-para">Hard working and passionate developer with 1 years experience designing, building
-                    and maintaining
-                    responsive, user-friendly websites.</p>
-                <p class="about-para">Proficient in HTML, CSS and JavaScript.</p>
-            </div>
-        </div>
-        <div class="about__img">
-            <img class="about-img" src="images/me.jpg" alt="Me leaning against a lift">
-        </div>
-    </div>
-
-    <div id="contact" class="contact">
-        <div class="contact__header">
-            <h2>Get in Touch</h2>
-            <small>* fields required</small>
-        </div>
-        <form name="contact" method="POST" netlify>
-            <label class="hidden">Don’t fill this out if you’re human:
-                <input name="bot-field" />
+    <body id="body">
+        <nav role="navigation" class="navbar" id="navbar">
+            <input
+                class="burger-btn"
+                type="checkbox"
+                id="burger-btn"
+                name="burger-btn"
+            />
+            <label class="burger-label" for="burger-btn">
+                <span class="bar top"></span>
+                <span class="bar middle"></span>
+                <span class="bar bottom"></span>
             </label>
-            <label for="name">Name: *
-                <input id="name" type="text" name="name" required maxlength="25" />
-            </label>
-            <label for="email">Email: *
-                <input id="email" type="email" name="email" required />
-            </label>
-            <label for="subject">Subject: *
-                <input id="subject" type="text" name="subject" required />
-            </label>
-            <label for="message">Message: *
-                <textarea id="message" name="message" cols="30" rows="10" required></textarea>
-            </label>
-            <button class="submit">Submit</button>
-        </form>
-    </div>
+            <ul id="navbar-nav" class="navbar__nav">
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-    <footer>
-        <div class="to-top" id="to-top">
-            <img src="images/icons/up.svg" alt="Up arrow icon">
-        </div>
-        <small>Created by <a class="github-link" href="https://github.com/liam-mcallister" target="_blank">Liam
-                McAllister</a></small>
-    </footer>
+        <section class="masthead">
+            <div class="masthead__content">
+                <div class="masthead__content__text">
+                    <h1>Liam</h1>
+                    <h1>McAllister</h1>
+                    <p class="masthead-para">Front-end Web Developer</p>
+                </div>
+                <div class="masthead__content__links">
+                    <a
+                        class="btn"
+                        target="_blank"
+                        href="https://www.linkedin.com/in/liam-mcallister-598268192/"
+                        title="Linkedin"
+                    >
+                        <img
+                            class="icon"
+                            src="images/icons/linkedin.svg"
+                            alt="Linkedin icon"
+                        />
+                    </a>
+                    <a
+                        class="btn"
+                        target="_blank"
+                        href="https://github.com/liam-mcallister"
+                        title="Github"
+                    >
+                        <img
+                            class="icon"
+                            src="images/icons/github.svg"
+                            alt="Github icon"
+                        />
+                    </a>
+                    <a
+                        class="btn"
+                        target="_blank"
+                        href="docs/CV.pdf"
+                        title="CV"
+                    >
+                        <img
+                            class="icon"
+                            src="images/icons/cv.svg"
+                            alt="Document icon"
+                        />
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
+        <main id="portfolio" class="portfolio">
+            <div class="portfolio__inner">
+                <h2>Portfolio</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card__image">
+                            <img
+                                class="card-img"
+                                src="images/screenshots/lmcdesign.jpg"
+                                alt="Freelance site screenshot"
+                            />
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__header">liammcallister.co.uk</h3>
+                            <ul class="card-bullets">
+                                <li class="bullet">Bootstrap</li>
+                                <li class="bullet">Sass</li>
+                                <li class="bullet">jQuery</li>
+                                <li class="bullet">PHP</li>
+                            </ul>
+                            <p>
+                                Here I wanted users to easily see what I offer,
+                                what I’ve created and how to get in touch. I
+                                used Gulp to concatenate and minify the CSS /
+                                JavaScript for faster loading. The contact form
+                                also has PHP server side validation.
+                            </p>
+                        </div>
+                        <div class="card__links">
+                            <a
+                                class="btn-card"
+                                href="https://liammcallister.co.uk/"
+                                target="_blank"
+                                >Live Site</a
+                            >
+                            <a class="btn-card-disabled">Private Repo</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img
+                                class="card-img"
+                                src="images/screenshots/blackcab.jpg"
+                                alt="Blackcab tours site screenshot"
+                            />
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__header">Bel-Cab Tours</h3>
+                            <ul class="card-bullets">
+                                <li class="bullet">Bootstrap</li>
+                                <li class="bullet">Sass</li>
+                                <li class="bullet">jQuery</li>
+                            </ul>
+                            <p>
+                                My objective was to create a clean and
+                                responsive site for a small black cab tours
+                                company. The contact form is validated with a
+                                jQuery plugin and a local storage token is used
+                                to show/hide the cookie policy banner.
+                            </p>
+                        </div>
+                        <div class="card__links">
+                            <a
+                                class="btn-card"
+                                href="https://liam-mcallister.github.io/blackcab-site/"
+                                target="_blank"
+                                >Live Site</a
+                            >
+                            <a
+                                class="btn-card"
+                                href="https://github.com/liam-mcallister/blackcab-site"
+                                target="_blank"
+                                >Github Repo</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img
+                                class="card-img"
+                                src="images/screenshots/selfstorage.jpg"
+                                alt="Self storage site screenshot"
+                            />
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__header">The Storage Nook</h3>
+                            <ul class="card-bullets">
+                                <li class="bullet">HTML</li>
+                                <li class="bullet">Sass</li>
+                                <li class="bullet">JavaScript</li>
+                            </ul>
+                            <p>
+                                For this site I decided to move away from
+                                frameworks and libraries and build everything
+                                from scratch. I made use of tabs and an
+                                accordion to display vital information like the
+                                FAQ and storage sizes.
+                            </p>
+                        </div>
+                        <div class="card__links">
+                            <a
+                                class="btn-card"
+                                href="https://liam-mcallister.github.io/storage-site/"
+                                target="_blank"
+                                >Live Site</a
+                            >
+                            <a
+                                class="btn-card"
+                                href="https://github.com/liam-mcallister/storage-site"
+                                target="_blank"
+                                >Github Repo</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img
+                                class="card-img"
+                                src="images/screenshots/coffeeshop.jpg"
+                                alt="Coffee shop site screenshot"
+                            />
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__header">Cuppuccino Café</h3>
+                            <ul class="card-bullets">
+                                <li class="bullet">HTML</li>
+                                <li class="bullet">Sass</li>
+                                <li class="bullet">jQuery</li>
+                            </ul>
+                            <p>
+                                My wife came up with the idea to create a
+                                website for a cafe with the ability for users to
+                                book a table. I used jQuery plugins for the
+                                image gallery, scroll animations and form
+                                validation. Utilizes the Google Maps JavaScript
+                                API.
+                            </p>
+                        </div>
+                        <div class="card__links">
+                            <a
+                                class="btn-card"
+                                href="https://liam-mcallister.github.io/coffee-shop-site/"
+                                target="_blank"
+                                >Live Site</a
+                            >
+                            <a
+                                class="btn-card"
+                                href="https://github.com/liam-mcallister/coffee-shop-site"
+                                target="_blank"
+                                >Github Repo</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img
+                                class="card-img"
+                                src="images/screenshots/todo.jpg"
+                                alt="Task tracker site screenshot"
+                            />
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__header">Task Tracker</h3>
+                            <ul class="card-bullets">
+                                <li class="bullet">React</li>
+                                <li class="bullet">CSS</li>
+                            </ul>
+                            <p>
+                                Moving on to React, I choose to create a Task
+                                Tracker app which allows users to add, delete
+                                and edit tasks. Users also have the option to
+                                filter the tasks by whether or not they have
+                                been completed or not.
+                            </p>
+                        </div>
+                        <div class="card__links">
+                            <a
+                                class="btn-card"
+                                href="https://liam-mcallister.github.io/todo/"
+                                target="_blank"
+                                >Live Site</a
+                            >
+                            <a
+                                class="btn-card"
+                                href="https://github.com/liam-mcallister/todo"
+                                target="_blank"
+                                >Github Repo</a
+                            >
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img
+                                class="card-img"
+                                src="images/screenshots/movie-database.jpg"
+                                alt="Movie Finder site screenshot"
+                            />
+                        </div>
+                        <div class="card__text">
+                            <h3 class="card__header">Movie Finder</h3>
+                            <ul class="card-bullets">
+                                <li class="bullet">React</li>
+                                <li class="bullet">CSS</li>
+                            </ul>
+                            <p>
+                                This movie database searcher app makes use of
+                                the OMDB API. When a user searches for a movie,
+                                the app sends a request to their database and
+                                displays the name, date and poster of each movie
+                                returned in the results.
+                            </p>
+                        </div>
+                        <div class="card__links">
+                            <a
+                                class="btn-card"
+                                href="https://liam-mcallister.github.io/movie-database/"
+                                target="_blank"
+                                >Live Site</a
+                            >
+                            <a
+                                class="btn-card"
+                                href="https://github.com/liam-mcallister/movie-database"
+                                target="_blank"
+                                >Github Repo</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section id="skills" class="skills">
+            <div class="skills__header">
+                <h2>Skills</h2>
+            </div>
+            <div class="inner">
+                <div class="skills__dev">
+                    <h3>Development</h3>
+                    <ul class="list">
+                        <li class="list-item">HTML5</li>
+                        <li class="list-item">CSS3</li>
+                        <li class="list-item">JavaScript</li>
+                        <li class="list-item">React</li>
+                        <li class="list-item">Bootstrap</li>
+                        <li class="list-item">jQuery</li>
+                        <li class="list-item">Sass</li>
+                    </ul>
+                </div>
+                <div class="skills__design">
+                    <h3>Design</h3>
+                    <ul class="list">
+                        <li class="list-item">Balsamiq</li>
+                        <li class="list-item">Figma</li>
+                    </ul>
+                </div>
+                <div class="skills__other">
+                    <h3>Other</h3>
+                    <ul class="list">
+                        <li class="list-item">Git</li>
+                        <li class="list-item">Github</li>
+                        <li class="list-item">Gulp</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about__text">
+                <div class="about__text__inner">
+                    <h2>About Me</h2>
+                    <p class="about-para">
+                        I am a Front-end Web Developer currently living in
+                        Lisburn.
+                    </p>
+                    <p class="about-para">
+                        Hard working and passionate developer with 1 years
+                        experience designing, building and maintaining
+                        responsive, user-friendly websites.
+                    </p>
+                    <p class="about-para">
+                        Proficient in HTML, CSS and JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="about__img">
+                <img
+                    class="about-img"
+                    src="images/me.jpg"
+                    alt="Me leaning against a lift"
+                />
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact__header">
+                <h2>Get in Touch</h2>
+                <small>* fields required</small>
+            </div>
+            <form name="contact" method="POST" netlify>
+                <label class="hidden"
+                    >Don’t fill this out if you’re human:
+                    <input name="bot-field" />
+                </label>
+                <label for="name"
+                    >Name: *
+                    <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        required
+                        maxlength="25"
+                    />
+                </label>
+                <label for="email"
+                    >Email: *
+                    <input id="email" type="email" name="email" required />
+                </label>
+                <label for="subject"
+                    >Subject: *
+                    <input id="subject" type="text" name="subject" required />
+                </label>
+                <label for="message"
+                    >Message: *
+                    <textarea
+                        id="message"
+                        name="message"
+                        cols="30"
+                        rows="10"
+                        required
+                    ></textarea>
+                </label>
+                <button class="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer>
+            <div class="to-top" id="to-top">
+                <img src="images/icons/up.svg" alt="Up arrow icon" />
+            </div>
+            <small
+                >Created by
+                <a
+                    class="github-link"
+                    href="https://github.com/liam-mcallister"
+                    target="_blank"
+                    >Liam McAllister</a
+                ></small
+            >
+        </footer>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">
+                You are using an <strong>outdated</strong> browser. Please
+                upgrade your browser to improve your experience.
+            </p>
         <![endif]-->
 
-    <!-- <script src="src/scripts/app.js"></script> -->
-    <script src="build/scripts/app.min.js"></script>
-</body>
-
+        <!-- <script src="src/scripts/app.js"></script> -->
+        <script src="build/scripts/app.min.js"></script>
+    </body>
 </html>

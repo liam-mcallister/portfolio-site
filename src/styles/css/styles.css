@@ -332,7 +332,7 @@ a::selection {
 .list-item {
   list-style-type: circle;
   line-height: 2rem;
-  color: #6b6f77;
+  color: #b6b6b6;
 }
 
 .list-item::-moz-selection {
