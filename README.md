@@ -16,6 +16,8 @@ Potential employers and recruiters are easily able to see what technologies I ha
 
 The contact form on this site previously used Elfsight but after checking the load speed on Google’s PageSpeed Insights I discovered that the third party code Elfsight had injected into the page greatly increased loading times. As a result I decided to host the site with Netlify and take advantage of their inbuilt form handling. This has decreased loading times from 4 seconds to half a second.
 
+![Screenshot of my portfolio website](https://user-images.githubusercontent.com/49287478/134683725-4f352576-87dd-4ae8-8045-a6bb69183e6e.png)
+
 ## 2. Tech
 
 This website uses the following technologies:
