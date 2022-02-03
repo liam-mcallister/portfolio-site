@@ -22,10 +22,12 @@ The contact form on this site previously used Elfsight but after checking the lo
 
 This website uses the following technologies:
 
--   [Sass](https://sass-lang.com/) - CSS preprocessor
--   [Gulp](http://gulpjs.com) - Streaming build system
--   [Netlify](https://www.netlify.com/) - Hosting and serverless backend service
--   [Google Fonts](https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Permanent+Marker&display=swap) - Open Sans / Permanent Marker
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Markup language for web pages
+- [Sass](https://sass-lang.com/) - CSS preprocessor
+- [Javascript](https://www.javascript.com/) - Programming language that conforms to the ECMAScript specification
+- [Gulp](http://gulpjs.com) - Streaming build system
+- [Netlify](https://www.netlify.com/) - Hosting and serverless backend service
+- [Google Fonts](https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Permanent+Marker&display=swap) - Open Sans / Permanent Marker
 
 ## 3. Installation
 
@@ -36,8 +38,8 @@ This website uses the following technologies:
 
 ## 4. Links
 
--   [Live Site](http://www.liamsportfolio.site/)
--   [Github Repo](https://github.com/liam-mcallister/portfolio-site)
+- [Live Site](http://www.liamsportfolio.site/)
+- [Github Repo](https://github.com/liam-mcallister/portfolio-site)
 
 ## 5. Author
 
