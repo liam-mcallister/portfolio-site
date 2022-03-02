@@ -534,13 +534,27 @@ body {
   color: #3ddc97;
 }
 
-@supports (background-clip: text) {
-  .masthead__content__text h1, .masthead__content__text h2 {
-    background: -webkit-gradient(linear, left top, right top, from(#8c7cc5), to(#3ddc97));
-    background: linear-gradient(to right, #8c7cc5 0%, #3ddc97 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.masthead__content__text h1, .masthead__content__text h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#8c7cc5), color-stop(70%, #3ddc97), to(#8c7cc5));
+  background: linear-gradient(to right, #8c7cc5 0%, #3ddc97 70%, #8c7cc5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-size: 200% auto;
+  -webkit-animation: gradient-scroll 3s linear infinite;
+          animation: gradient-scroll 3s linear infinite;
+}
+
+@-webkit-keyframes gradient-scroll {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes gradient-scroll {
+  to {
+    background-position: 200% center;
   }
 }
 
